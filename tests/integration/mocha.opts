@@ -1,0 +1,5 @@
+ --require tests/integration/helpers.js
+tests/integration/global.js
+ --reporter spec
+ --slow 5000
+--timeout 5000

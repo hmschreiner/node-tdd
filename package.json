@@ -1,0 +1,28 @@
+{
+  "name": "node-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node ./server.js",
+    "lint": "npx eslint src/* tests/unit/**/* tests/integration/**/*",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:integration": "NODE_ENV=test mocha --require @babel/register --opts tests/integration/mocha.opts tests/integration/**/*.spec.js",
+    "test:unit": "NODE_ENV=test mocha --require @babel/register --opts tests/unit/mocha.opts tests/unit/**/*.spec.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "chai": "^4.2.0",
+    "eslint": "^6.1.0",
+    "mocha": "^6.2.0",
+    "sinon": "^7.3.2",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.5"
+  }
+}
