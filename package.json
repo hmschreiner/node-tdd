@@ -1,7 +1,7 @@
 {
   "name": "node-tdd",
   "version": "1.0.0",
-  "description": "",
+  "description": "Exemplo de desenvolvimento de API em Node.js usando TDD",
   "main": "index.js",
   "scripts": {
     "start": "babel-node ./server.js",

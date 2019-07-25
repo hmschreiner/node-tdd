@@ -4,6 +4,7 @@
 docker pull mongo
 
 # Remove o container, se existir
+docker stop node-tdd
 docker container rm node-tdd
 
 # Gera o container
